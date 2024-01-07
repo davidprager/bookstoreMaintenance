@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Insert title of app -->
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- Insert header -->
+        <h1></h1>
+        <p>
+          <!-- insert links for each function -->
+          <a href="">Home</a> |
+          <a href="">All books</a> |
+          <a href="{{ url_for('create')}}">Insert a book</a>
+        </p>
+      </header>
+      <main>{% block container %} {% endblock %}</main>
+      <footer>
+        <!-- Insert footer -->
+        <p>
+
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
